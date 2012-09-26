@@ -1,0 +1,39 @@
+.thumb{
+  float: left;
+}
+
+.popup-photo {
+  padding: 10px
+}
+
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+  }
+
+  #boxes .window {
+    position:absolute;
+    left:0;
+    top:0;
+/*          width:440px;
+    height:200px;*/
+    width:500px; 
+    height:600px;          
+    display:none;
+    z-index:9999;
+    padding:20px;
+  }
+
+  #boxes #dialog {
+    position:fixed;
+/*          width:375px; 
+    height:203px;*/
+    width:400px; 
+    height:500px;          
+    padding:10px;
+    background-color:#ffffff;
+  }
