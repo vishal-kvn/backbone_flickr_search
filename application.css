@@ -1,5 +1,16 @@
+#images{
+  width: 1000px;
+}
+
 .thumb{
   float: left;
+  margin-left: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .popup-photo {
@@ -19,10 +30,8 @@
     position:absolute;
     left:0;
     top:0;
-/*          width:440px;
-    height:200px;*/
-    width:500px; 
-    height:600px;          
+    width:650px; 
+    height:650px;          
     display:none;
     z-index:9999;
     padding:20px;
@@ -30,10 +39,8 @@
 
   #boxes #dialog {
     position:fixed;
-/*          width:375px; 
-    height:203px;*/
-    width:400px; 
-    height:500px;          
+    width:600px; 
+    height:600px;          
     padding:10px;
     background-color:#ffffff;
   }

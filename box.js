@@ -1,11 +1,7 @@
-function popup(p){
+function popup(image_url, title){
 	var id = $("#dialog");
-    // var image_url = $(this).attr("src");
-    var image_url = p.attr("src");
-    console.log(image_url);
 
-    var markup = "<div><img src=" + image_url + " /></div>"
-    console.log(markup);
+    var markup = "<div><img src=" + image_url + " /><div>" + title + "</div></div>"
 
     // $.template( "photoTemplate", markup );
 
@@ -39,11 +35,11 @@ function popup(p){
     $(id).fadeIn(2000);
 }
 
-//if close button is clicked
-$('.window .close').click(function(e) {
+$("#dialog").delegate(".close", "click", function(e) {
     //Cancel the link behavior
     e.preventDefault();
 
     $('#mask').hide();
     $('.window').hide();
-});
+
+    });
